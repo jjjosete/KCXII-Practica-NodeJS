@@ -50,7 +50,7 @@ Paginación:
 - http://localhost:3000/api/anuncios/?skip=4&limit=2
 
 Eligiendo que campos quiero:
-- http://localhost:3000/api/anuncios/?select=name -_id
+- http://localhost:3000/api/anuncios/?select=nombre -_id
 
 Ordenación:
 - http://localhost:3000/api/anuncios/?sort=nombre

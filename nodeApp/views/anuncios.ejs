@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p><%= welcome %></p>
+    <p> Productos que te podrían interesar: </p>
+    <% results.forEach( results=> { %>
+      <section class= "anuncio">
+        <p> <b>Nombre:</b> <%= results.nombre%> </p>
+        <p> <b>Venta:</b> <%= results.venta%>  </p>
+        <p> <b>Precio:</b> <%= results.precio%>€ </p>
+        <p> <b>Tags:</b>  <%= results.tags%> </p>
+        <p> <b>Foto:</b>    <%= results.foto%> </p>
+        
+      </section>
+       
+    <% }) %>
+  
+  
+  
+   
+  </body>
+</html>

@@ -1,0 +1,29 @@
+
+    <% include header.html %>
+
+     <!-- Mashead header-->
+     <header class="masthead">
+      <div class="container px-5">
+          <div class="row gx-5 align-items-center">
+              <div class="col-lg-6">
+                  <!-- Mashead text and app badges-->
+                  <div class="mb-5 mb-lg-0 text-center text-lg-start">
+                                  
+
+                    <h1><%= __(title) %></h1>
+                    
+                    <p><%= __('Welcome to Nodepop') %></p>
+
+                    <h2> <%=__('i18n example for plurals') %></h2>
+                    
+                    <p> 0 <%= __n('Mouse', 0)%></p>
+                    
+                    <p> 1 <%= __n('Mouse', 1)%></p>
+                    
+                    <p> 2 <%= __n('Mouse', 2)%></p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </header>
+<% include footer.html %>

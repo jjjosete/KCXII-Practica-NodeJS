@@ -9,7 +9,7 @@ mongoose.connection.on('error', err => {
     process.exit(1);
 })
 
-mongoose.connect('mongodb://localhost/nodepop')
+mongoose.connect(process.env.MONGODB_CONNECTION_STRING)
 
 mongoose.connection.once('open', () => {
     console.log('Conectado a MongoDB en BD: ', mongoose.connection.name);
